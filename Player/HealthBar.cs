@@ -7,13 +7,11 @@ public class HealthBar : MonoBehaviour{
     public static HealthBar Instance { get; private set; }
     public float health;
     public float maxHealth;
-    public float MaxHealth = 100;
     public Image bar;
    
     void Start()
     {
         maxHealth = health;
-        MaxHealth = health;
     }
 
     private void Awake(){
